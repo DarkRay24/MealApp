@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        style="@style/app_background"
+        tools:context=".fragments.RecipeFragment">
+
+        <ImageView
+            android:id="@+id/imgMealRecipe"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_foreground" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvIngredientsTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="Ingredients"
+                        android:layout_gravity="center"
+                        android:textColor="#E3703B"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvIngredientsList"
+                        style="@style/recipe_text_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:text=" 8 Veal Cutlets\n 4 Eggs\n 200g Bread\n Crumbs 100g\n Flour 300ml\n Butter 100g\n Vegetable Oil\n Salt Lemon Slices"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvStepsTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="Steps"
+                        android:layout_gravity="center"
+                        android:textColor="#E3703B"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvStepsList"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginBottom="8dp"
+                        style="@style/recipe_text_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tenderize the veal to about 2–4mm, and salt on both sides.\n\nOn a flat plate, stir the eggs briefly with a fork.\n\nLightly coat the cutlets in flour then dip into the egg, and finally, coat in breadcrumbs.\n\nHeat the butter and oil in a large pan (allow the fat to get very hot) and fry the schnitzels until golden brown on both sides.\n\nMake sure to toss the pan regularly so that the schnitzels are surrounded by oil and the crumbing becomes ‘fluffy’.\n\nRemove, and drain on kitchen paper. Fry the parsley in the remaining oil and drain.\n\nPlace the schnitzels on awarmed plate and serve garnishedwith parsley and slices of lemon.\n"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</layout>

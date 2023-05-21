@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@id/categoriesFragment"
+        android:title="Categories"
+        android:icon="@drawable/ic_category"
+        />
+
+    <item
+        android:id="@id/filtersFragment"
+        android:title="Filters"
+        android:icon="@drawable/ic_filters" />
+
+</menu>
